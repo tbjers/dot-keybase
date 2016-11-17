@@ -10,6 +10,9 @@ pkg.install() {
         sudo dnf install -y https://prerelease.keybase.io/keybase_amd64.rpm
         run_keybase
       fi
+      if utils.cmd_exists yaourt; then
+        yaourt -Sy --noconfirm keybase-bin
+      fi
       ;;
   esac
 }
