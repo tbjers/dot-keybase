@@ -9,6 +9,7 @@ pkg.install() {
       if utils.cmd_exists brew; then
         brew cask install keybase
       fi
+      ;;
     linux)
       if utils.cmd_exists dnf; then
         sudo dnf install -y https://prerelease.keybase.io/keybase_amd64.rpm
