@@ -24,5 +24,4 @@ pkg.install() {
 
 pkg.pull() {
   git pull
-  apm upgrade --no-confirm --no-color
 }
